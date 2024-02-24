@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="style.css">
+  <link 
+  rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+  <div id="main">
+  <section id="header">
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="">
+        <h1> <em>UET Taxila</em></h1>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="ri-close-line fa" onclick="removeNav()" > </i>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/About.html">About</a></li>
+          <li><a href="">Course</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <i class="ri-menu-line icon remove" onclick="showNav()" id="remove" ></i>
+    </nav>
+    <div class="text-section">
+      <h1> <em> Pakistan's Biggest University </em></h1>
+      <p>The University of Engineering and Technology, Taxila (UET Taxila) is a public university located in Taxila, Punjab, Pakistan. <br> It was established in 1975 as a campus of the University of Engineering and Technology,<br> Lahore and chartered as an independent university in 1993.
+      </p>
+      <a href="#" class="hero-btn about-btn">Learn More</a>
+    </div>
+  </section>
+
+
+  <!------------------------- Course Section--------------------- -->
+
+  <section class="courses">
+    <h1>Courses We Will Offer!</h1>
+<p>Hi, there here is the some Special courses we will offer is cheap Price. First five enrollment is free in this course</p>
+    <div class="row">
+      <div class="course-col">
+        <h3>Web Development</h3>
+        <p> "Unlock your potential with our comprehensive Web Development course. From mastering HTML, CSS, and JavaScript, to diving into backend development and full-stack applications,"</p>
+      </div>
+      <div class="course-col">
+        <h3>Python</h3>
+        <p>"Dive into the world of programming with Python, the language of simplicity and power. Unleash your potential in data science, web development, automation, and more."</p>
+      </div>
+      <div class="course-col ">
+        <h3>App Development</h3>
+        <p>"Transform your ideas into innovative applications with our comprehensive App Development course. Learn to create stunning, user-friendly apps for both iOS and Android platforms. "</p>    
+  </section>
+
+  <!------------------------- Campus Section--------------------- -->
+  <section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>With 10,000+ students from 160+ countries, UET Taxila is a global university. Here are the top countries represented by our students:</p>
+    <div class="row">
+      <div class="campus-col">
+        <img src="dep-01.jfif" alt="">
+        <div class="layer">
+          <h3>UET Taxila</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="dep-05.jfif" alt="">
+        <div class="layer">
+          <h3>UET Lahore</h3>
+        </div>
+      </div>
+      <div class="campus-col img" >
+        <img src="dep-09.jfif" alt="">
+        <div class="layer">
+          <h3>UET Karachi</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities-------------------------------------------- -->
+  <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Here are some facilities we provide to our students</p>
+    <div class="row1">
+      <div class="facility-col">
+        <img src="facilities-01.jpg" alt="">
+        <h3>World Class Library</h3>
+        <p>Our library is well stocked with books, journals, and e-resources. It is a perfect place for students to study and research.</p>
+      </div>
+      <div class="facility-col">
+        <img src="facilities-02.jpg" alt="">
+        <h3>Modern Classrooms</h3>
+        <p>Our classrooms are equipped with the latest technology and are designed to foster a conducive learning environment.</p>
+      </div>
+      <div class="facility-col">
+        <img src="facilities-03.jpg" alt="">
+        <h3>State of the Art Labs</h3>
+        <p>Our labs are equipped with the latest technology and are designed to foster a conducive learning environment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!----------------------- students Reviews-------------------->
+  <section id="review">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="men-01.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum non ratione dignissimos nesciunt expedita cumque unde nobis, inventore explicabo modi?</p>
+          <div class="icons">
+            <h3>John Wick </h3>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-half-line"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="women-01.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum non ratione dignissimos nesciunt expedita cumque unde nobis, inventore explicabo modi?</p>
+          <div class="icons">
+            <h3>Alina</h3>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-half-line"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="men-03.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum non ratione dignissimos nesciunt expedita cumque unde nobis, inventore explicabo modi?</p>
+          <div class="icons">  
+            <h3>Michel</h3>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-half-line"></i>
+            <i class="ri-star-half-line"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <img src="women-02.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum non ratione dignissimos nesciunt expedita cumque unde nobis, inventore explicabo modi?</p>
+          <div class="icons">
+            <h3>Rimaa</h3>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-half-line"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="men-04.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum non ratione dignissimos nesciunt expedita cumque unde nobis, inventore explicabo modi?</p>
+          <div class="icons">
+            <h3>Rock</h3>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-half-line"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="women-03.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum non ratione dignissimos nesciunt expedita cumque unde nobis, inventore explicabo modi?</p>
+          <div class="icons">
+            <h3>Jesica Sanfar</h3>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-half-line"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          </div>
+            <div class="swiper-slide">
+          <img src="women-05.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum non ratione dignissimos nesciunt expedita cumque unde nobis, inventore explicabo modi?</p>
+          <div class="icons">
+            <h3>Naina</h3>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-half-line"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="women-04.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum non ratione dignissimos nesciunt expedita cumque unde nobis, inventore explicabo modi?</p>
+          <div class="icons">
+            <h3>Soufi</h3>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-half-line"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="men-03.jpg" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum non ratione dignissimos nesciunt expedita cumque unde nobis, inventore explicabo modi?</p>
+          <div class="icons"> 
+            <h3>Jusifar</h3>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-half-line"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Conatct us For enrollment---------------------------- -->
+<section class="cta">
+  <h1>Enroll For Our Various Online Courses <br> AnyWhere from the World
+  </h1>
+  <a href="#" class="hero-btn">Contact Us</a>
+</section>
+<!-- Footer---------------------------------->
+<section class="footer">
+  <h3>About Us</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius sequi sint consectetur <br> ipsam obcaecati vitae commodi, repellendus similique ullam.</p>
+  <div class="icons">
+    <i class="ri-facebook-fill"></i>
+    <i class="ri-twitter-fill"></i>
+    <i class="ri-instagram-fill"></i>
+    <i class="ri-linkedin-fill"></i>
+  </div>
+  <p class="para">Made with <i class="ri-heart-fill"></i> by UET Taxila</p>
+</section>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

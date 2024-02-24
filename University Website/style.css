@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html ,body{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+#header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(5,0,30,0.7),rgba(4,9,30,0.7)),url('uni-03.jfif');
+background-size: cover;
+background-repeat: no-repeat;
+/* background-size: cover; */
+background-position: center;
+position: relative;
+}
+nav{
+  display: flex;
+  padding: 1% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 80px;
+  height: auto;
+}
+nav .logo{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: #fff;
+  font-size: 1.2rem;
+font-weight: 700;
+}
+nav .nav-links ul{
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+nav .nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 500;
+  padding: .4rem 0;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+ nav .nav-links ul li a::after{
+ content: '';
+ width: 0%;
+ height: 3px;
+ background-color: #f44336;
+  position: absolute;
+  display:block;
+  margin: auto;
+transition: .5s all;
+}
+nav i{
+  display: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+nav .nav-links ul li a:hover::after{
+  width: 100%;
+  /* transition: width.5s; */
+}
+.text-section{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+}
+.text-section h1{
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.text-section p{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #ffffffd1;
+}
+.hero-btn{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  color: #ffffffce;
+  border: 2px solid #ffffff6d;
+  display: inline-block;
+  padding: .8rem 1.5rem;
+  text-decoration: none;
+  background-color: transparent;
+}
+.hero-btn:hover{
+  border: 2px solid #f44336;
+  background-color: #f44336;
+  color: #fff;
+  transition: .5s all;
+}
+.courses{
+width: 80%;
+margin: auto;
+padding: 3rem;
+text-align: center;
+margin-top: 1rem;
+}
+.courses h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.courses p{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #000000d1;
+}
+.courses .row{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.course-col h1{
+  font-size: 1.5rem;
+  font-weight: 700;
+  list-style: 3px;
+  margin-bottom: 3rem;
+padding: 1rem 0;
+}
+.course-col p{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  color: #000000d1;
+}
+.courses .row .course-col{
+  flex-basis: 30%;
+  background-color: #f443361b;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  transition: .5s all;
+}
+.course-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Campases---------------------------------------- */
+.campus{
+  width: 80%;
+  margin: auto;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.campus h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.campus p{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #000000d1;
+}
+.campus .row{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.campus-col{
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.campus-col h1{
+  font-size: 1.5rem;
+  font-weight: 700;
+  list-style: 3px;
+  margin-bottom: 3rem;
+padding: 1rem 0;
+}
+.campus-col img{
+  width: 100%;
+  border-radius: 10px;
+  transition: .5s all;
+  display: block;
+}
+.layer{
+background-color:transparent;
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+transition: .5s all;
+}
+
+.layer h3{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  transition: .5s all;
+ bottom: 0%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+opacity: 0;
+
+} 
+.layer:hover h3{
+bottom: 50%;
+opacity: 1;
+}
+.campus-col:hover  .layer {
+  background-color:rgba(256, 0,0, 0.7);
+  /* opacity: 1; */
+  transition: .5s all;
+}
+
+/* OUR Facilities--------------------------------- */
+.facilities{
+  width: 85%;
+  margin: auto;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.facilities h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.facilities p{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #000000d1;
+}
+.facilities .row1{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.facility-col{
+  flex-basis: 60%;
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+  transition: .5s all;
+}
+/* .facility-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+} */
+.facility-col img{
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: .5s all;
+  display: block;
+  margin: 1rem;
+}
+.facility-col h1{
+  font-size: 1.5rem;
+  font-weight: 700;
+  list-style: 3px;
+  margin-bottom: 3rem;
+  padding: 3rem 2rem;
+  margin:2rem ;
+text-align: center;
+}
+.facility-col p{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  color: #000000d1;
+  text-align:center;
+}
+/* Students Review------------------------------- */
+/* swpier JS Start----------------------------------- */
+.swiper {
+  width: 100vw;
+  height: 45vh;
+  /* background-color: red; */
+}
+
+.swiper-slide {
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: #77777711;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem .0rem;
+}
+#review{
+  display: flex;
+  align-items: center;
+
+}
+.swiper-slide img {
+
+  display: block;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin:  auto;
+}
+.swiper-slide p{
+font-size: 1rem;
+padding: 1rem; 
+color: #000000d1;
+text-align: center;
+}
+
+.swiper-slide .icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.swiper-slide .icons i{
+  font-size: 1.5rem;
+  color: #f44336;
+  margin: 0 1rem;
+}
+.swiper-slide h3{
+  font-size: 1.2rem;
+text-align: start;
+padding: .7rem 0rem;
+font-weight: 500;
+}
+/* swpier JS End----------------------------------- */
+
+/* Enroolment---------------------------------- */
+.cta{
+  width: 80%;
+  height: 50vh;
+  margin: 100px auto;
+  padding: 5rem;
+  text-align: center;
+  margin-top: 4rem;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,00,0.7)),url('enroll.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.cta h1{
+
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* footer----------------------------------------- */
+.footer{
+  width: 100%;
+  height: 50vh;
+  /* background-color: #000000; */
+  color: #000;
+  text-align: center;
+  padding: 2rem 0;
+}
+.footer h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.footer p{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #000000d1;
+}
+.footer .icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.footer .icons i{
+  font-size: 1.5rem;
+  color: #f44336;
+  cursor: pointer;
+  border: 2px solid #f44336;
+  border-radius: 50px;
+  padding: .3rem;
+}
+.footer .icons i:hover{
+  background-color: #f44336;
+  color: #fff;
+  transition: .5s all;
+}
+.footer .para{
+  padding: 1.5rem 2rem;
+
+}
+.footer .para i{
+  color:  #f44336;
+}
+
+
+
+/*--------------------------------- About Us page------------------------------- */
+
+/* Header-------------- */
+#header{
+  min-height: 80vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(5,0,30,0.7),rgba(4,9,30,0.7)),url('uni-03.jfif');
+}
+.department{
+  width: 80%;
+  margin: auto;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+  /* display: flex; */
+}
+.deparment-col{
+  display: flex;
+  flex-direction: column;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 4rem;
+}
+.deparment-col h2{
+  font-size: 2rem;
+  padding: .5rem 1rem;
+}
+.deparment-col p{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  color: #000000d1;
+  padding: .3rem 1rem;
+  width: 60%;
+  text-align: justify;
+}
+
+.deparment-col img{
+  
+  height: 45vh;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: .5s all;
+  /* display: block; */
+  /* margin: 1rem; */
+
+}
+.department h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.department p{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #000000d1;
+}
+
+
+/* Media Query------------------------------------- */
+
+
+
+@media (max-width: 700px){
+  .nav-links ul li{
+    display: block;
+ }
+  .nav-links {
+    position: absolute;
+    background-color: #00000059;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    z-index: 2;
+  }
+  .nav-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  .text-section h1{
+    font-size: 1.5rem;
+  }
+  .text-section p{
+    font-size: .5rem;
+ text-align: center;
+  }
+  .hero-btn{
+    padding: .5rem 1rem;
+  }
+  nav i{
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 15px;
+  cursor: pointer;
+  }
+  .course-col{
+    flex-basis: 100%;
+  }
+  .courses .row{
+    flex-direction: column;
+  }
+  .campus .row{
+    flex-direction: column;
+    font-size: .5rem;
+  }
+  .campus-col img{
+    width: 100%;
+    object-fit: cover;
+  }
+  .facilities .row1{
+    flex-direction: column;
+  }
+  .facility-col img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+  .swiper {
+    width: 100%;
+    height: 30vh;
+  }
+  .swiper-slide img {
+    width: 60px;
+    height: 60px;
+  }
+  .swiper-slide p {
+    font-size: 1rem;
+  }
+  .swiper-slide .icons i {
+    font-size: 1.5rem;
+  }
+  .swiper-slide h3 {
+    font-size: 1.2rem;
+  }
+  .cta {
+    padding: 3rem;
+  }
+  .cta h1{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .footer .icons i{
+    font-size: 1.5rem;
+    padding: .3rem;
+  }
+  .footer .para{
+    padding: 1rem 1rem;
+  } 
+  .deparment-col img{
+    height: 30vh;
+  } 
+  .deparment-col h2{
+    font-size: 1.5rem;
+  } 
+  .deparment-col p{
+    font-size: .8rem;
+    padding: .3rem 1rem;
+    width: 100%;
+  }
+  .department h1{
+    font-size: 2rem;
+  }
+  .department p{
+    font-size: .8rem;
+  }
+  .department{
+    padding: 1rem;
+  } 
+  .departments .row{
+    flex-direction: column;
+  }
+  .department .row .deparment-col{
+    flex-basis: 100%;
+  }
+  .department .row .deparment-col img{
+    width: 100%;
+    height: 30vh;
+  }
+  .department .row .deparment-col h2{
+    font-size: 1.5rem;
+  }
+  .deparment-col{
+    flex-direction: column;
+  }
+  .department .row .deparment-col p{
+    font-size: .8rem;
+    padding: .3rem 1rem;
+    width: 100%;
+  }
+  .footer .icons i{
+    font-size: 1.5rem;
+    padding: .3rem;
+  }
+  .footer .para{
+    padding: 1rem 1rem;
+  }
+  .footer h3{
+    font-size: 1.5rem;
+  }
+  .footer p{
+    font-size: .8rem;
+  }
+  .footer .icons i{
+    font-size: 1.5rem;
+    padding: .3rem;
+  }
+  .footer .para{
+    padding: 1rem 1rem;
+  }
+  .footer h3{
+    font-size: 1.5rem;
+  }
+  .footer p{
+    font-size: .8rem;
+  }
+  .footer .icons i{
+    font-size: 1.5rem;
+    padding: .3rem;
+  }
+  .footer .para{
+    padding: 1rem 1rem;
+  }
+  .footer h3{
+    font-size: 1.5rem;
+  }
+  .footer p{
+    font-size: .8rem;
+  }
+  .footer .icons i{
+    font-size: 1.5rem;
+    padding: .3rem;
+  }
+  .footer .para{
+    padding: 1rem 1rem;
+  }
+  .footer h3{
+    font-size: 1.5rem;
+  }
+  .footer p{
+    font-size: .8rem;
+  }
+  .footer .icons i{
+    font-size: 1.5rem;
+    padding: .3rem;
+  }
+  .footer .para{
+    padding: 1rem 1rem;
+  }
+  .footer h3{
+    font-size: 1.5rem;
+  }
+
+}
+
+
